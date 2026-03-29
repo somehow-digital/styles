@@ -7,7 +7,7 @@
 	"license": "MIT",
 	"repository": "somehow-digital/styles",
 	"exports": {
-		".": "./src/styles.css"
+		".": "./src/index.js"
 	},
 	"files": [
 		"./src/"
