@@ -1,7 +1,7 @@
 {
 	"name": "@somehow-digital/styles",
 	"type": "module",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"packageManager": "pnpm@10.33.0",
 	"description": "Shared `CSS` styles for `somehow.digital` projects.",
 	"license": "MIT",
