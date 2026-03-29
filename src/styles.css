@@ -1,0 +1,25 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	cursor: default;
+
+	scroll-behavior: smooth;
+	scrollbar-gutter: stable;
+	scrollbar-width: none;
+
+	overflow-x: clip;
+}
+
+img {
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+
+svg {
+	fill: currentColor;
+}
