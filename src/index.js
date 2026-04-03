@@ -1,3 +1,26 @@
-import { readFileSync } from 'node:fs';
+export default `
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
 
-export default readFileSync(new URL('./styles.css', import.meta.url), 'utf8');
+body {
+	cursor: default;
+
+	scroll-behavior: smooth;
+	scrollbar-gutter: stable;
+	scrollbar-width: none;
+
+	overflow-x: clip;
+}
+
+img {
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+
+svg {
+	fill: currentColor;
+}`;
