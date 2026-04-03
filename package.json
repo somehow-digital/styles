@@ -7,9 +7,11 @@
 	"license": "MIT",
 	"repository": "somehow-digital/styles",
 	"exports": {
-		".": "./src/index.js"
+		".": "./src/index.js",
+		"./css": "./dist/styles.css"
 	},
 	"files": [
+		"./dist/",
 		"./src/"
 	],
 	"engines": {
@@ -17,7 +19,9 @@
 		"pnpm": ">=10"
 	},
 	"scripts": {
+		"prepack": "pnpm build",
 		"prepare": "husky",
+		"build": "node ./scripts/build.js",
 		"lint": "concurrently --group --prefix-colors 'auto' 'pnpm:lint:*'",
 		"lint:eslint": "eslint .",
 		"lint:cspell": "cspell --no-progress --no-summary --no-must-find-files .",
