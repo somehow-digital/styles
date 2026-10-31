@@ -20,7 +20,7 @@
 	},
 	"scripts": {
 		"prepack": "pnpm build",
-		"prepare": "husky",
+		"prepare": "vp config --no-agent",
 		"build": "node ./scripts/build.js",
 		"lint": "concurrently --group --prefix-colors 'auto' 'pnpm:lint:*'",
 		"lint:eslint": "eslint .",
@@ -39,9 +39,8 @@
 		"concurrently": "^10.0.0",
 		"cspell": "^10.0.0",
 		"eslint": "^10.0.0",
-		"husky": "^9.0.11",
 		"knip": "^6.0.0",
-		"lint-staged": "^17.0.0",
-		"semantic-release": "^25.0.0"
+		"semantic-release": "^25.0.0",
+		"vite-plus": "1.4.0"
 	}
 }
