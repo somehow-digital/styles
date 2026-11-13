@@ -15,3 +15,7 @@ pnpm add -D @somehow-digital/styles
 ```js
 import '@somehow-digital/styles';
 ```
+
+---
+
+[`somehow.digital`](https://somehow.digital/)
